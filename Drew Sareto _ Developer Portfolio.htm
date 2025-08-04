@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drew Sareto | Developer Portfolio</title>
+  <link href="Drew%20Sareto%20_%20Developer%20Portfolio_files/css2.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Fira Code', monospace;
+    }
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+    .light-mode {
+      background-color: #ffffff;
+      color: #121212;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+    .typewriter {
+      font-size: 1.6rem;
+      margin-top: 1rem;
+      height: 2rem;
+      overflow: hidden;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem 0;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin: auto;
+      background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...');
+      background-size: cover;
+      background-position: center;
+    }
+    .project-card {
+      background: #1e1e1e;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .skill {
+      background: #333;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    .toggle {
+      cursor: pointer;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem 1rem;
+      background: #00bcd4;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+    }
+    .testimonial {
+      background: #1a1a1a;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 4px solid #00bcd4;
+      font-style: italic;
+    }
+    .awards, .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .badge {
+      background: #2d2d2d;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle" onclick="toggleTheme()">Toggle Theme</button>
+  <header>
+    <div class="profile"></div>
+    <h1>Drew Sareto</h1>
+    <div class="typewriter" id="typewriter">Creative Coder</div>
+    <p>Creative problem-solver building beautiful, efficient digital experiences.</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I’m Drew, a passionate software engineer from Fedha, Embakasi. I 
+love crafting digital solutions that combine code, design, and 
+creativity. Currently enrolled in the Power Learn Project, I’m expanding
+ my skills and portfolio every day.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Git</div>
+      <div class="skill">APIs</div>
+      <div class="skill">React (Basics)</div>
+      <div class="skill">Debugging</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Calculator.py</h3>
+      <p>A command-line calculator with functions for addition, subtraction, multiplication and division.</p>
+    </div>
+    <div class="project-card">
+      <h3>SmartTask</h3>
+      <p>A simple To-Do app built with HTML, CSS &amp; JS, using LocalStorage for persistent tasks.</p>
+    </div>
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <p>Fetches real-time weather data from OpenWeatherMap API and shows it dynamically.</p>
+    </div>
+    <div class="project-card">
+      <h3>ChatBot</h3>
+      <p>A basic AI chatbot simulation using JavaScript, capable of answering preset questions with style.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Testimonials</h2>
+    <div class="testimonial">“Drew is one of the most promising 
+developers I've mentored. His creativity and persistence set him apart.”
+ – Mentor, Power Learn Project</div>
+    <div class="testimonial">“Always delivers on time, and his attention to detail is top-tier. Highly recommended!” – Teammate, KU Hackathon</div>
+  </section>
+
+  <section>
+    <h2>Achievements &amp; Awards</h2>
+    <div class="awards">
+      <div class="badge">Top 5 in PLP Coding Challenge</div>
+      <div class="badge">Kenyatta University Hackathon Finalist</div>
+      <div class="badge">100 Days of Code Participant</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Interests</h2>
+    <div class="interests">
+      <div class="badge">Football</div>
+      <div class="badge">Coding</div>
+      <div class="badge">Public Speaking</div>
+      <div class="badge">Golf</div>
+      <div class="badge">Reading</div>
+      <div class="badge">Design</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>Power Learn Project</strong> – Software Dev Track (Ongoing)<br>
+    <strong>Kenyatta University</strong> – Computer Science (Current)<br>
+    <strong>Segero High School</strong> – KCSE Graduate</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:saretodrew@gmail.com">saretodrew@gmail.com</a><br>
+    Phone: 0702217304<br>
+    GitHub: <a href="https://github.com/drewsareto">drewsareto</a><br>
+    Instagram: @s.a.r.e.t.o</p>
+  </section>
+
+  <footer style="text-align: center; padding: 1rem; margin-top: 2rem; font-size: 0.9rem; color: gray;">
+    © 2025 Drew Sareto. All rights reserved.
+  </footer>
+
+  <script>
+    const words = ["Developer", "Designer", "Problem Solver", "Creative Coder"];
+    let i = 0, j = 0, isDeleting = false;
+    const el = document.getElementById("typewriter");
+
+    function type() {
+      const word = words[i];
+      const txt = word.substring(0, j);
+      el.innerHTML = txt;
+
+      if (!isDeleting) {
+        j++;
+        if (j > word.length) {
+          isDeleting = true;
+          setTimeout(type, 1000);
+          return;
+        }
+      } else {
+        j--;
+        if (j === 0) {
+          isDeleting = false;
+          i = (i + 1) % words.length;
+        }
+      }
+      setTimeout(type, isDeleting ? 80 : 120);
+    }
+    type();
+
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
